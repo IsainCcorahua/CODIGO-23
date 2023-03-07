@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            background-color: #444;
+            color: #eee;
+
+            font-family: sans-serif;
+        }
+        code {
+            font-family: consolas;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Filas y Columnas</h2>
+            <p>Las tablas se colocan dentro de un etiqueta <code>table</code></p>
+            <p>Las tablas tienen 3 partes</p>
+            <ul>
+                <li><code>thead</code>:cabecera</li>
+                <li><code>tbody</code>:cuerpo</li>
+                <li><code>tfoot</code>:Pie de tabla</li>
+            </ul>
+        </section>
+        <hr />
+        <section>
+            <h2>Tabla Simple</h2>
+            <table border="1">
+                <thead>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                    <th>P.Unitario</th>
+                    <th>P.Total</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Teclado mecanico Fanatic Vanquish</td>
+                        <td>S/ 200</td>
+                        <td>S/ 400</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Monitor widescreen Samsung</td>
+                        <td>S/ 800</td>
+                        <td>S/ 800</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mouse HyperX</td>
+                        <td>S/ 188</td>
+                        <td>S/ 188</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="1" align="center">TOTAL</td>
+                        <td>S/ 1380.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Combinando Filas</h2>
+            <p>Para conbinar filas se usa el atributo <code>rowspan</code></p>
+            <table border="1">
+                <thead>
+                    <th>Categoria</th>
+                    <th>Etiquetas</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5" align="center">Formulario</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" align="center">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6" align="center">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Ejecicio 01</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Supermercados "la vendedora"</td>
+                        <td></td>
+                        <td align="right">25/04/2011</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">N°2456/00</td>
+                    </tr>
+                    <tr>
+                        <td>Cliente:</td>
+                        <td rowspan="3">Juan Francisco Redrován 
+                            <br>105625822 
+                            <br>Ambanto, Av. Cevallos</td>
+                    </tr>
+                    <tr>
+                        <td>RUC:</td>  
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
