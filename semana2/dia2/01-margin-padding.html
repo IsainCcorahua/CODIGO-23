@@ -8,18 +8,26 @@
     <style>
         * {
             margin: 0;
+            box-sizing: border-box;
             padding: 0;
         }
-        .caja-1 {
-            border: 1px solid red;
+        .caja-1, 
+        .caja-2 {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
         }
-        .span-1 {
-            border: 1px solid blue;
+        .caja-1 {
+            margin-bottom: 20px;
+        }
+        .caja-2 {
+            background-color: peru;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="caja-1">algo de contenido</div>
-    <span class="span-1"></span>
+    <div class="caja-1">CAJA 1</div>
+    <div class="caja-2">CAJA 2</div>
 </body>
 </html>
