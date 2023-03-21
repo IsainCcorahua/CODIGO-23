@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+/* animacion una  */
+
+.texto-animado {
+    /* una animacion esta compuesta por un nombre y un tiempo */
+    animation-name: texto-volador;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    border: solid;
+}
+@keyframes texto-volador{
+    from{
+        margin-left: 100%;
+        width: 300%;
+        background-color: aqua;
+        border: none;  
+    }
+    to{
+        margin-left: -100%;
+        background-color: brown;
+        color: white;
+        border: none;
+    }
+}
+.imagen-animada{
+    animation-name: image-resize;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 400px;
+    height: 400px;
+}
+@keyframes image-resize {
+    from{
+        width: 20px;
+        height: 20px;
+    }
+    to{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.box-uno{
+    height: 150px;
+    width: 150px;
+    animation-name: box-animation;
+    animation-duration: 10s;
+    background-size: cover;
+    animation-iteration-count: infinite;
+}
+@keyframes box-animation{
+    /* 
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: sandybrown
+    }
+    50%{
+        background-color: rgb(34,0,128)
+    }
+    75%{
+        background-color: blueviolet
+    }
+    100%{
+        background-color: green
+    }
+    */
+    0%{ background-image: url(./avatar10.png);
+    }
+    25%{ background-image: url(./avatar11.png);
+    }
+    50%{ background-image: url(./avatar12.png);
+    }
+    75%{ background-image: url(./avatar13.png);
+    }
+    100%{ background-image: url(./avatar14.jpg);
+    } 
+    }
+    /* ball-uno */

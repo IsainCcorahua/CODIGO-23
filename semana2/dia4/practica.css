@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: bisque;
+}
+.caja1,
+.caja2 {
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+.caja1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.caja2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+p {
+    color: #e4e4e4a4;
+}
+.fondo {
+    height: 100vh;
+    background-color: #0d192b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta {
+    background-color: #14253d;
+    width: 290px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: #0e0e0e 0px 0px 50px;
+    padding: 20px;
+    margin: 20px;
+}
+.tarjeta .equi{
+    margin-top: 10px;
+    font-size: medium;
+}
+.tarjeta .descripcion {
+    margin-top: 10px;
+}
+.logoimg {
+    width: 100%;
+    height: 275px;
+    border-radius: 15px;
+}
+.viñeta {
+    margin-top:15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.viñeta .ETHcolor {
+    color: #00FFF8;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.avatarimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px; 
+    border: 1px solid #fff;
+}

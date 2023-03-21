@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 10px;
+    padding: 10px;
+}
+img {
+    width: 385px;
+    height: 182px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul {
+    width: 158px;
+    height: 176px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+.section-imagen{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}

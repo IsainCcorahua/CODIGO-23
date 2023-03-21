@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+div {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(201, 227, 107);
+    color: indigo;
+}
