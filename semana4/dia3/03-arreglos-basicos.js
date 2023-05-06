@@ -67,3 +67,83 @@ for (let i = 0; i < notas.length; i++) {
  console.log('Numeros pares son: ', npar,', ');
  console.log('Total impares', impares1);
  console.log('Numeros impares son: ', nimpar,', ');
+
+// let nombre = ['Juan', 'Carlos', 'Daniel'];
+
+// for(let i = 0; i < nombre.length; i++){
+//     console.log(nombre[i])
+// }
+
+// const objeto9 = [
+//   {nombre: "Daniel",
+//    edad: 18, 
+//    comidaFavorita: "Arroz con pollo" 
+// },
+// {
+//     nombre: 'Carlos',
+//     edad: 28,
+//     comidaFavorita: 'Pollo a la brasa',    
+// },
+// {
+//     nombre: 'Carla',
+//     edad: 23,
+//     comidaFavorita: 'Guiso de Palta',
+// },
+// ];
+
+// for(let i = 0; i < objeto9.length; i++){
+
+//     console.log('=========================================')
+
+//     console.log('Nombre: ' +objeto9[i].nombre)
+//     console.log('Edad: ' +objeto9[i].edad)
+//     console.log('Comida Favorita: ' +objeto9[i].comidaFavorita)
+// }
+
+
+// const arrayOb = {
+//     nombre: 'Objeto con array',
+//     arr: ['abeja', 'banana', 'camion', 'dado'],
+// };
+
+// arrayOb.arr.forEach((elemento)=>{
+//     console.log(elemento)
+// })
+
+// objeto9.forEach((element)=>{
+//     console.log(element)
+// })
+
+for(let i = 0; i < notas.length; i++){
+    if(notas[i] % 2 == 0){
+
+    }
+}
+
+
+
+const arrayobjetos = [
+    {
+        nombre: 'Manuel',
+        apellidos: 'Sosa Contreras',
+        edad: 18,
+        dni: 52486295,
+        profesion: 'Estudiante'
+    },
+    {
+        nombre: 'Isaac',
+        apellidos: 'Palacios Perez',
+        edad: 23,
+        dni: 23546523,
+        profesion: 'Estudiante'
+    }
+];
+
+for(let i = 0; i <= arrayobjetos.length - 1; i++){
+    console.log("Nombre: " + arrayobjetos[i].nombre)
+    console.log("Edad: " + arrayobjetos[i].edad)
+    console.log("Profesión: " + arrayobjetos[i].profesion)
+}
+
+
+

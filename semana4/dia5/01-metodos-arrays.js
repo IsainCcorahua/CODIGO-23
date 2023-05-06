@@ -59,5 +59,12 @@ const contarFocos = ()=> {
         focosVerdes: focosVerdes,
         focosRojos: focosRojos,
     };
-}
+};
+
 console.log(contarFocos());
+
+
+
+const arayr = [ 1, 2 , 3, 4, 5];
+
+let total = arayr.reduce()

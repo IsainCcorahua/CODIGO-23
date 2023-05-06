@@ -1,0 +1,16 @@
+@function rem($px) {
+    @return $px / 16 * 1rem;
+}
+
+.header {
+    padding: 20px 0;
+    .developer {
+        display: block;
+        font-size: rem(14);
+        color: var(--bs-gray);
+        font-weight: 500;
+    }
+    .title {
+        
+    }
+}

@@ -1,27 +1,43 @@
 //ejercicio 1
 
-// const N1 = 15;
-// const N2 = 18;
-// const N3 = 12;
-// const N4 = 14;
+// const n1 = 15;
+// const n2 = 10;
+// const n3 = 20;
+// const n4 = 16;
 
-// const promedio = (N1 + N2 + N3 + N4) / 4;
+// let promedio = (n1 + n2 + n3 + n4)/4
 
-// console.log('El promedio es: ', promedio)
 
+// console.log("Su promedio es: ", promedio);
 
 //ejercicio 2
-
-// const horas = 9;
+// let horasTrab = prompt("Ingrese horas trabajadas: ") 
 // const cobroxhora = 3;
-// const cobro = horas * cobroxhora;
 
-// console.log('Total a pagar: $', cobro);
+// let cobroTotal = horasTrab * cobroxhora;
+
+// console.log("Su pago es: ", cobroTotal);
 
 //ejercicio 3 
 
-const pagoxsemana = 1000;
-const ahorroxsemana = pagoxsemana * 0.15;
-const ahorroxaño = (ahorroxsemana * 4)*12;
+let sueldo = prompt("Ingrese su sueldo: ");
+const ahorromes = sueldo * 0.15;
 
-console.log('El ahorro de un año es: $', ahorroxaño);
+let ahorroAnio = ahorromes * 12;
+
+console.log("Su ahorro anual seria: ", ahorroAnio);
+
+let dia = prompt("Ingrese el dia de semana");
+let compra = prompt("Ingrese el valor de la compra");
+
+let totalPago = 0;
+
+
+if (dia === "martes" && compra > 1000){
+    totalPago = compra -(compra*0.15)
+} else {
+    totalPago = compra;
+
+}
+
+document.write("Total a pagar: ",totalPago)

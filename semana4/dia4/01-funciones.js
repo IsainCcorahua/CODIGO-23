@@ -9,7 +9,6 @@ function nombreDeLaFuncion(){
     alert('Mi primera funcion')
 }
 
-
 //nombreDeLaFuncion()
 
 const sumar=(numero1,numero2)=>{
@@ -59,13 +58,12 @@ console.log(saludar("guillermo","sifuentes"))
 
 //----------------------------------------
 
-const mostrarNombre=()=>{
-    let elementoNombre = document.getElementById('nombreUsuario');
+const mostrarNombre =()=>{
+    let newnombre = document.getElementById('nombreUsuario');
     let title = document.getElementById('reemplazo');
-    let mensaje = 'tu te llamas '+ elementoNombre.value;
+    let mensaje = 'Tu te llamas '+ newnombre.value;
 
-    title.textContent=mensaje;
-
+    title.textContent = mensaje;
 }
 
 //------------------------------------
@@ -85,7 +83,7 @@ const mtexto=()=>{
     let NuevoText= document.getElementById('badbunny');
     let NuevMensaje= bad.value;
 
-    NuevoText.textContent = 'Mi artista favorito es '+ NuevMensaje.value;
+    NuevoText.textContent = 'Mi artista favorito es '+ NuevMensaje;
 }
 
 //-----------------------------------------
@@ -100,16 +98,69 @@ const tiempoCumplido=()=>{
 
 //ejemplo dos
 
-let elementoSegundos = document.getElementById('tiempoElegido');
-let elementoTextoAlarma= document.getElementById('textoAlarma');
+let tiempElement = document.getElementById('tiempoElegido');
+let estado = document.getElementById('textoAlarma');
 
-const comenzarTiempo=()=>{
-    setTimeout(tiempoCumplido2,1000 * elementoSegundos.value)
+const tiempolimit =()=>{
+    estado.textContent = 'Encendido';
+    estado.style.color = 'green';
 }
 
-const tiempoCumplido2=()=>{
-    elementoTextoAlarma.textContent='ENCENDIDO';
-    elementoTextoAlarma.style.color= 'green';
+const comenzarTiempo =()=>{
+    setTimeout(tiempolimit, 1000 * tiempElement.value)
 }
 
+
+function Disco(artista, albun, año){
+    this.artista = artista;
+    this.albun = albun;
+    this.año = año;
+}
+
+let Disco2 = new Disco ('billie eiglish','www', 2012);
+
+console.log('Artista: ' + Disco2.artista)
+console.log('Albun: ' + Disco2.albun)
+console.log('año: ' + Disco2.año)
+
+// class Player{
+//     constructor(nombre, colorSombrero){
+//         this._nombre = nombre;
+//         this._colorSombrero = colorSombrero;
+//     }
+//     saltar(){}
+//     correr(){}
+//     saludar(){
+//         return `Hola soy ${this._nombre} y mi sombrero es ${this._colorSombrero}`; 
+//     }
+//     get nombre(){
+//         return this._nombre
+//     }
+//     set cambiarNombre(nuevoNOmbre){
+//         this._nombre = nuevoNOmbre; 
+//     }
+// }
+
+// let player1 = new Player('Mario', 'Rojo');
+// let player2 = new Player('Luigi', 'Verde');
+
+// console.log(player1);
+// console.log(player2);
+
+// console.log(player1.saludar());
+
+
+// class Pet extends Player{
+//     constructor(nombre, colorSombrero, colorPiel){
+//     super(nombre, colorSombrero);
+//     this._colorPiel= colorPiel;
+//     }
+// }
+
+// let pet1 = new Pet('Yoshi', 'Invisible', 'Verde');
+// console.log(pet1);
+// console.log(pet1.nombre)
+
+// pet1.cambiarNombre = 'Rufus';
+// console.log(pet1.nombre)
 

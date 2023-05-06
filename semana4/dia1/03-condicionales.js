@@ -15,10 +15,10 @@
 
 const Dia = 'martes';
 const compra = 300;
-if (Dia === 'martes'){
-    total = compra - (compra * 0.15)
-}
-    console.log('Total a compra $', compra + ' total a pagar por descuento: $', total);
+// if (Dia === 'martes'){
+//     total = compra - (compra * 0.15)
+// }
+//     console.log('Total a compra $', compra + ' total a pagar por descuento: $', total);
 
 //Modificar el anterior ejercicio, para que el descuento,
 //se realice si y solo si, es dia "martes" y el valor de la compra
@@ -36,3 +36,12 @@ if (Dia ==='martes') {
 
 console.log('Total a pagar', resultado);
 console.log(new Date().toDateString())
+
+// if (dia === "martes" && compra > 1000){
+//     totalPago = compra -(compra*0.15)
+// } else {
+//     totalPago = compra;
+
+// }
+
+// document.write("Total a pagar: ",totalPago)

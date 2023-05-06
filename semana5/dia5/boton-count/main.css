@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ff9;
+    color: hsl(209,62%,16%);
+    line-height: 1.5;
+    font-size:0,875rem;
+}
+
